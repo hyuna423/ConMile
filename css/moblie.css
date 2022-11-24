@@ -1,12 +1,47 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  .economy01_img {
+    width: 50%;
+    margin-top: 15%;
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    #economy .economy_wrap h3 {
+      text-align: center;
+    }
+    .economy01_box {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    .ecn01_box {
+      width: 100%;
+      text-align: center;
+    }
+    #economy .economy01_box .ecn01_box .ecn01_txt {
+      margin-bottom: 7%;
+      margin-top: 8%;
+    }
+    .economy01_img {
+      width: 80%;
+      margin-top: 5%;
+    }
+
+    .ecn02_box {
+      flex-direction: column-reverse;
+    }
+    #economy .ecn02_box h4 {
+      margin-bottom: 5%;
+      position: relative;
+    }
+    #economy .ecn02_box p {
+      margin-bottom: 8%;
+    }
 }
 
 
@@ -20,7 +55,13 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
+  #economy .economy02_img .w_ecn2 {
+    display: none;
+  }
+  #economy .economy02_img .m_ecn2 {
+    padding: 0 10%;
+    display: block;
+  }
 }
 
 
@@ -28,7 +69,18 @@
 
 
 @media screen and (max-width:576px) {
-
+  .economy_wrap {
+    padding: 6% 0;
+  }
+  .ecn01_box .ecn01_txt p {
+    font-size: 0.8em;
+  }
+  #economy .ecn02_box p {
+    font-size: 0.8em;
+  }
+  #economy .economy02_img .m_ecn2 {
+    padding: 0 20%;
+  }
 }
 
 
