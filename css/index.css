@@ -98,7 +98,7 @@ hgroup h1 img{
 }
 
 .SMN_effect-11 a:before {
-  color: rgb(138, 159, 255);
+  color: rgb(109, 132, 235);
   content: attr(data-hover);
   position: absolute;
   opacity: 0;
@@ -139,6 +139,10 @@ hgroup h1 img{
 
 .m_menu_button, .m_menu, .m_menu_down{
   display: none;
+}
+
+.m_menu_button{
+  cursor: pointer;
 }
 
 .fixed_menus{
