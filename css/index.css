@@ -23,7 +23,276 @@ h3{
 }
 
 
-
+body{
+  overflow-x: hidden;
+}
 
 
 /*헤더*/
+
+
+header{
+  width: 100%;
+
+}
+
+.head_all{
+  width: 100%;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,.9);
+  position: fixed;
+  left: 0;
+  top: 10px;
+  padding: 0 5%;
+  z-index: 900;
+}
+
+hgroup{
+  width: 20%;
+}
+
+hgroup a{
+  width: 100%;
+  display: inline-block;
+}
+
+hgroup h1{
+  width: 100%;
+  float: left;
+}
+
+hgroup h1 img{
+  max-width: 100%;
+}
+
+.logo_mobile{
+  display: none;
+}
+
+.pc_menu ul{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pc_menu li{
+  margin-right: 7%;
+}
+
+.pc_menu li:last-child{
+  margin-right: 0 !important;
+}
+
+.pc_menu li a{
+  text-decoration: none;
+  color: #604AA0;
+  font-weight: 600;
+}
+
+.menu a {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.SMN_effect-11 a:before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.SMN_effect-11 a:hover:before, .SMN_effect-11 a:focus:before {
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity: 1;
+}
+
+.lang{
+  width: 15%;
+}
+
+.btn_kor{
+  color: #fff !important;
+  background-color: #604AA0 !important;
+  border-radius: 20px;
+  padding: 3% 9%;
+}
+
+.btn_eng{
+  color: #926df8 !important;
+  background-color: transparent !important;
+  border-radius: 20px;
+  padding: 3% 9%;
+}
+
+.m_menu_button, .m_menu, .m_menu_down{
+  display: none;
+}
+
+.fixed_menus{
+  width: 15%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 900;
+}
+
+.fixed_contents{
+  width: 100%;
+}
+
+.fixed_contents ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fixed_contents ul li{
+
+}
+
+.fixed_contents ul li a{
+  display: inline-block;
+  background-color: rgba(255,255,255,.4);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.6s;
+  padding: 10%;
+}
+
+.fixed_contents ul li a:hover{
+  color: #906BF8;
+}
+
+.fixed_contents ul li a i{
+  font-size: 2.8em;
+}
+
+
+
+
+.m_menu_button i{
+  color: #926df8;
+  transition: all 1s;
+}
+
+.m_menu_button:hover > i{
+  transform: rotate(180deg);
+}
+
+.m_menu{
+  position: fixed;
+  right: 0;
+  top: 110px;
+  width: 100%;
+  height: 650px;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 0 0 0 80px;
+  box-shadow: 0 6px 8px rgba(0,0,0,.5);
+  text-align: center;
+  padding: 8%;
+  z-index: 900;
+}
+
+.m_menu ul{
+  width: 100%;
+}
+
+.m_menu ul li{
+  margin-bottom: 8%;
+}
+
+.m_menu ul li:last-child{
+  margin-bottom: 0 !important;
+}
+
+.m_menu ul li a{
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #926df8;
+}
+
+
+.m_menu_down{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+  background-color: #b8a1f8;
+  padding: 7%;
+  box-shadow: 0 -3px 10px rgba(0,0,0,.5);
+
+}
+
+.m_menu_down_wrap{
+  width: 100%;
+}
+
+.m_menu_down_wrap ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.m_menu_down_wrap ul li i{
+  transition: all .3s;
+}
+
+.m_menu_down_wrap ul li a:hover > i {
+  color: #fff;
+}
+
+/*home*/
+
+#home{
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_video{
+  height: 100%;
+  position: relative;
+}
+
+.main_video video{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home_wrap{
+  width: 30%;
+  position: absolute;
+  left: 63%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.home_wrap_txt{
+  width: 100%;
+  color: #fff;
+}
+
+.home_wrap_txt h2{
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+
+.home_wrap_txt h4{
+  font-size: 1.7em;
+}

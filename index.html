@@ -20,8 +20,6 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/moblie.css">
-  <link rel="stylesheet" href="css/index_eng.css">
-
   <!--favicon--->
   <link href="img/favicon.ico" rel="icon">
   <link href="img/favicon.ico" rel="apple-touch-icon">
@@ -40,23 +38,30 @@
 
   <header>
 
-    <div class="">
+    <div class="head_all">
 
       <hgroup>
 
-        <h1><img src="img/" alt="logo"></h1>
+        <a href="index.html" class="logo_pc"><h1><img src="img/logo_w_low.png" alt="logo"></h1></a>
+        <a href="index.html" class="logo_mobile"><h1><img src="img/ConMile-Logo-m.png" alt="logo_m"></h1></a>
 
       </hgroup>
 
 
-      <nav class="">
-        <ul>
+      <nav class="pc_menu container">
+        <ul class="menu align-center expanded text-center SMN_effect-11">
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#Business" class="scroll" data-hover="Business"><span>Business</span></a></li>
+          <li><a href="#Economy" class="scroll" data-hover="Economy"><span>Economy</span></a></li>
+          <li><a href="#Wallet" class="scroll" data-hover="Wallet"><span>Wallet</span></a></li>
+          <li><a href="#Roadmap" class="scroll" data-hover="Roadmap"><span>Roadmap</span></a></li>
+          <li><a href="#Contact" class="scroll" data-hover="Contact"><span>Contact</span></a></li>
+          <li class="lang">
+            <a href="index.html" class="scroll btn_kor">Kor</a>
+            <a href="index.html" class="scroll">|</a>
+            <a href="index_eng.html" class="scroll btn_eng">Eng</a>
+          </li>
+
 
         </ul>
       </nav>
@@ -64,21 +69,27 @@
 
       <!--반응형-->
 
-      <div class="">
+      <div class="m_menu_button xi-4x">         
 
-        <img src="img/" alt="menu_button">
+        <i class="xi-border-outer"></i>
 
       </div>
 
-      <nav class="">
+      <nav class="m_menu">
 
-        <ul>
+        <ul class="menu align-center expanded text-center SMN_effect-11">
 
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
-          <li><a href="" class="scroll"></a></li>
+          <li><a href="#Business" class="scroll" data-hover="Business"><span>Business</span></a></li>
+          <li><a href="#Economy" class="scroll" data-hover="Economy"><span>Economy</span></a></li>
+          <li><a href="#Wallet" class="scroll" data-hover="Wallet"><span>Wallet</span></a></li>
+          <li><a href="#Roadmap" class="scroll" data-hover="Roadmap"><span>Roadmap</span></a></li>
+          <li><a href="#Contact" class="scroll" data-hover="Contact"><span>Contact</span></a></li>
+          <li class="lang">
+            <a href="index.html" class="scroll btn_kor">Kor</a>
+            <a href="index.html" class="scroll">|</a>
+            <a href="index_eng.html" class="scroll btn_eng">Eng</a>
+          </li>
+
 
         </ul>
 
@@ -87,8 +98,8 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $("").click(function () {
-            $("").animate({ width: "toggle" }, 250);
+          $(".m_menu_button").click(function () {
+            $(".m_menu").animate({ height: "toggle" }, 250);
           });
         });
 
@@ -98,13 +109,65 @@
 
   </header>
 
+
+
+
+
+  <div class="fixed_menus">
+    <div class="fixed_contents">
+      <ul>
+        <li><a href=""><i class="xi-wallet"></i></a></li>
+        <li><a href="ConMile whitepaper KO.pdf"><i class="xi-file-download"></i></a></li>
+        <li><a href="index.html"><i class="xi-caret-up-circle-o"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="m_menu_down">
+    <div class="m_menu_down_wrap">
+      <ul>
+        <li><a href=""><i class="xi-wallet xi-3x"></i></a></li>
+        <li><a href="index.html"><i class="xi-home  xi-3x"></i></a></li>
+        <li><a href="ConMile whitepaper KO.pdf"><i class="xi-file-download  xi-3x"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
   <main>
 
-  </main>
-  
-  <footer>
+    <section id="home">
 
-  </footer>
+      <div class="main_video">
+        <video autoplay="" muted loop playsinline>
+          <source src="vid/main_vid.mp4" type="video/mp4">
+        </video>
+      </div><!-- main_video -->
+
+      <div class="home_wrap container">
+        <div class="home_wrap_txt" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2500">
+          <h2>Consolidate <br> Mileage System</h2>
+          
+          <h4>All points are made with Mileage System!</h4>
+        </div>
+
+      </div><!-- home_wrap -->
+
+
+    </section>
+
+
+
+
+  </main>
+
 
   <script>
     AOS.init();

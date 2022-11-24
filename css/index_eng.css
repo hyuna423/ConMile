@@ -2,8 +2,18 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+    .btn_kor{
+      color: #926df8 !important;
+      background-color: transparent !important;
+    }
 
 
+    .btn_eng{
+      color: #fff !important;
+      background-color: #604AA0 !important;
+      border-radius: 20px;
+      padding: 3% 9%;
+    }
 
     
 /*데탑*/
@@ -20,6 +30,15 @@
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    
+    .btn_eng{
+      padding: 2% 5%;
+      border-radius: 40px;
+    }
+    .btn_kor{
+      padding: 3%;
+    }
+
 }
 
 
