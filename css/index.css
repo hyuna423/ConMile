@@ -1,10 +1,20 @@
-*{margin:0; padding:0; box-sizing:border-box;}
-    a{text-decoration : none;}
-    address{font-style:normal;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
 
 
 
-h3{
+h3 {
   font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 30px;
@@ -26,4 +36,187 @@ h3{
 
 
 
-/*헤더*/
+/*wallet*/
+
+#wallet {
+  background: #906BF8;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#wallet::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../img/wallet_bg.png)no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#wallet .wallet_area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wallet .wallet_area .wallet_right {
+  margin-right: 5%;
+  line-height: 3;
+}
+
+#wallet .wallet_area .wallet_right article {
+  color: #fff;
+}
+
+#wallet .wallet_area .wallet_left {
+  display: flex;
+  flex-direction: column;
+}
+
+#wallet .wallet_area .wallet_left img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#wallet .wallet_area .wallet_left button {
+  width: 30%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+  backdrop-filter: blur(2.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 5px;
+  padding: 1% 0;
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+}
+
+#wallet .wallet_area .wallet_left button::after {
+  content: "soon";
+  position: absolute;
+  top: -10px;
+  background: slateblue;
+  border: 1px solid #fff;
+  padding: 2px 5px;
+  line-height: 0.9;
+  font-size: 12px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#wallet .wallet_area .wallet_left button:hover::after {
+  opacity: 1;
+}
+
+
+/* roadmap */
+#roadmap {
+  background: #E2E2E2;
+  position: relative;
+  padding: 120px 0;
+}
+
+#roadmap::after {
+  content: '';
+  width: 63%;
+  height: 69%;
+  background: url(../img/road_bg.png)no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -14%;
+  left: -5%;
+  z-index: 0;
+}
+
+#roadmap::before {
+  content: '';
+  width: 20%;
+  height: 50%;
+  background: url(../img/road_bg.png)no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+#roadmap .roadmap_area {
+  position: relative;
+  padding: 5% 0;
+  background: linear-gradient(41.74deg, rgba(255, 255, 255, 0.08) 36.63%, rgba(255, 255, 255, 0.47) 53.27%, rgba(255, 255, 255, 0.03) 68.41%);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  z-index: 1;
+}
+
+#roadmap .roadmap_area h3 {
+  text-align: center;
+}
+
+#roadmap .roadmap_area .roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#roadmap .roadmap_area .roadmap .road {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  height: 288px;
+  margin-bottom: 2%;
+}
+
+#roadmap .roadmap_area .roadmap .road.second {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
+#roadmap .roadmap_area .roadmap .road h4 {
+  width: 40%;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.12deg);
+  position: relative;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#roadmap .roadmap_area .roadmap .road h4 img {
+  content: "";
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#roadmap .roadmap_area .roadmap .road .road_txt {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 4px 13px #D39FD9;
+  border-radius: 30px;
+  transform: rotate(0.12deg);
+  padding: 4% 2%;
+}
+
+#roadmap .roadmap_area .roadmap .road.second .road_txt {
+  width: 60%;
+}
+
+#roadmap .roadmap_area .roadmap .road.third{
+  margin-bottom: 0;
+}
