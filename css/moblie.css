@@ -25,9 +25,18 @@
   }
 
   .lang{
-    width:17%;
+    width: 100%;
+  } 
+
+  
+  .btn_kor{
+    padding: 2% 5%;
+    border-radius: 40px;
   }
 
+  .btn_eng{
+    padding: 3%;
+  }
 
 
   /*home*/
@@ -51,9 +60,6 @@
       margin-right: 4%;
     }
 
-    .lang{
-      width:20%;
-    }
 
     hgroup h1 img{
       max-width:70%;
@@ -93,18 +99,7 @@
       float: right;
     }
 
-    .lang{
-      width: 100%;
-    } 
-
-    .btn_kor{
-      padding: 2% 5%;
-      border-radius: 40px;
-    }
-
-    .btn_eng{
-      padding: 3%;
-    }
+ 
 
     .fixed_menus{
       right: 60px;
@@ -138,9 +133,7 @@
 
     /*header*/
 
-    .m_menu{
-      height: 620px;
-    }
+
 
     .fixed_menus{
       right: 85px;
@@ -175,9 +168,7 @@
     max-width: 100%;
   }
 
-  .m_menu{
-    height: 430px;
-  }
+
 
   .m_menu ul li a{
     font-size: 1.48em;
