@@ -7,12 +7,36 @@
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    /* contact */
+    #contact{
+      padding: 5% 0;
+    }
+    /* //contact */
+
+    /* footer */
+    footer .f_wrap .f_ct h2{
+      margin-right: 2%;
+    }
+
+    footer .f_wrap .f_ct .f_info{
+      width: 78%;
+    }
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    /* contact */
+    textarea{
+      height: 200px;
+    }
+  
+    #contact .ct_wrap form input.send{
+      line-height: 2.5rem;
+    }
+    /* //contact */
 }
 
 
@@ -21,14 +45,70 @@
 
 @media screen and (max-width:767px) {
 
+   /* contact */
+  #contact .ct_wrap h3{
+    padding-bottom: 1%;
+  }
+  /* //contact */
+
+  /* footer */
+  footer .f_wrap .f_ct{
+    flex-direction: column;
+  }
+
+  footer .f_wrap .f_ct h2{
+    width: 100%;
+    text-align: center;
+    padding: 1.5% 0;
+  }
+
+  footer .f_wrap .f_ct h2 img{
+    max-width: 160px;
+  }
+
+  footer .f_wrap .f_ct .f_info{
+    width: 100%;
+  }
 }
 
 
 /*모바일2*/
-
-
 @media screen and (max-width:576px) {
+  /* footer */
+  footer .f_wrap .f_ct .f_info{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
 
+  footer .f_wrap .f_ct .f_info .sec1{
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .f_wrap .f_ct .f_info .sec1 li{
+    padding-bottom: 3%;
+  }
+
+  footer .f_wrap .f_ct .f_info .sec2{
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .f_wrap .f_ct .f_info .sec2 li{
+    padding-bottom: 3%;
+  }
+
+  footer .f_wrap .f_ct .f_info .sec3{
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .f_wrap .f_ct .f_info .sec3 h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+  }
 }
 
 
