@@ -98,11 +98,11 @@ hgroup h1 img{
 }
 
 .SMN_effect-11 a:before {
-  color: rgb(109, 132, 235);
+  color: rgb(196, 181, 250);
   content: attr(data-hover);
   position: absolute;
   opacity: 0;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
   -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
   transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
