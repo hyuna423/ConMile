@@ -98,7 +98,7 @@ hgroup h1 img{
 }
 
 .SMN_effect-11 a:before {
-  color: rgb(233, 109, 235);
+  color: rgb(138, 159, 255);
   content: attr(data-hover);
   position: absolute;
   opacity: 0;
