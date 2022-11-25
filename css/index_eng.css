@@ -16,6 +16,9 @@
       padding: 3% 9%;
     }
 
+    #wallet .wallet_area .wallet_right {
+      width: 30%;
+    }
     
 /*데탑*/
 @media screen and (max-width:1440px) {
