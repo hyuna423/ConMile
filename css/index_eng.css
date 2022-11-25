@@ -52,6 +52,10 @@
       padding: 3%;
     }
 
+    #wallet .wallet_area .wallet_right {
+      width: 80%;
+  }
+
 }
 
 
@@ -59,7 +63,9 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
+  #wallet .wallet_area .wallet_right {
+    width: 75%;
+}
 }
 
 
@@ -67,7 +73,9 @@
 
 
 @media screen and (max-width:576px) {
-
+  #wallet .wallet_area .wallet_right {
+    width: 80%;
+}
 }
 
 
