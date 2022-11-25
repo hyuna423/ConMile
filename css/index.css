@@ -318,7 +318,7 @@ hgroup h1 img{
   width: 100%;
   background: #fff;
   box-shadow: 0px 0px 50px 11px rgba(0, 0, 0, 0.25);
-  padding: 50px 0;
+  padding: 5%;
   text-align: center;
 }
 #Business1 .business1_wrap .buns_txt {
@@ -342,14 +342,16 @@ hgroup h1 img{
   width: 100%;
   background: #fff;
   box-shadow: 0px 0px 50px 11px rgba(0, 0, 0, 0.25);
-  padding: 50px 0;
+  padding: 5% ;
   display: flex;
   flex-direction: column;
+  border-radius: 0px 0px 30px 30px;
+  /* 하단 border-radius 추가 */
 }
+
 #Business2 .business2_wrap .buns2_txt {
   display: flex;
   align-items: center;
-  margin-left: 5%;
   margin-bottom: 5%;
 }
 #Business2 .business2_wrap .buns2_txt p {
@@ -364,10 +366,11 @@ hgroup h1 img{
   position: relative;
 }
 #Business2 .business2_wrap .buns2_img img {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  /* 이미지 크기 수정 */
 }
 #Business2 .business2_wrap .buns2_img::after {
   content: "";
@@ -387,7 +390,7 @@ hgroup h1 img{
 /* economy */
 #economy {
   width: 100%;
-  padding: 5% 10%;
+  padding: 5% 0;
   overflow: hidden;
   position: relative;
   background-color: #E2E2E2;
@@ -404,7 +407,7 @@ hgroup h1 img{
 .economy_wrap {
   width: 100%;
   background: #fff;
-  padding: 6% 8%;
+  padding: 5%;
   position: relative;
   border-radius: 30px;
   z-index: 2;
@@ -429,9 +432,11 @@ hgroup h1 img{
   display: flex;
   margin-top: 4%;
   margin-bottom: 10%;
+  justify-content: space-between;
+  align-items: center;
 }
 .ecn01_box {
-  width: 50%;
+  width: 30%;
   padding: 2% 0;
   margin-bottom: 5%;
 }
@@ -452,7 +457,7 @@ background-clip: text;
   font-weight: 300;
 }
 .economy01_img {
-  width: 80%;
+  width: 60%;
 }
 .economy01_img img {
   max-width: 100%;
@@ -464,7 +469,6 @@ background-clip: text;
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin-bottom: 5%;
 }
 #economy .ecn02_box h4 {
   font-size: 1.1em;
@@ -574,20 +578,21 @@ background-clip: text;
 
 #roadmap::after {
   content: '';
-  width: 63%;
-  height: 69%;
+  width: 60%;
+  height: 60%;
   background: url(../img/road_bg.png)no-repeat;
   background-size: contain;
   position: absolute;
-  bottom: -14%;
+  bottom: 0%;
   left: -5%;
   z-index: 0;
 }
 
+
 #roadmap::before {
   content: '';
   width: 20%;
-  height: 50%;
+  height: 30%;
   background: url(../img/road_bg.png)no-repeat;
   background-size: contain;
   position: absolute;
@@ -645,7 +650,7 @@ background-clip: text;
 
 #roadmap .roadmap_area .roadmap .road h4 img {
   content: "";
-  width: 70%;
+  width: 65%;
   height: auto;
   position: absolute;
   top: -30%;
@@ -680,16 +685,17 @@ background-clip: text;
   padding: 100px 0;
   position: relative;
   z-index: 0;
+  overflow:hidden;
 }
 
 #contact::before{
   content: '';
   width: 100%;
   height: 100%;
-  background: url(../img/contact.png) no-repeat center center;
+  background: url(../img/contact.png) no-repeat ;
   background-size: cover;
   position: absolute;
-  bottom: -3%;
+  bottom: -30%;
   left: 0;
   z-index: -1;
 }
@@ -710,8 +716,8 @@ background-clip: text;
   margin: 0 auto;
 }
 
-input,
-textarea{
+#contact input,
+#contact textarea{
   display: block;
   background: rgba(239, 239, 239, 0.2);
   border: 1px solid #fff;
@@ -741,7 +747,7 @@ textarea{
   margin-right: 2%;
 }
 
-textarea{
+#contact textarea{
   border-radius: 0 0 50px 50px;
   height: 300px;
 }
